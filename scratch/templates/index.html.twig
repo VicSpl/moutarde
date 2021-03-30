@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Scratch
+{% endblock %}
+
+{% block body %}
+	<nav class="banner-container">
+		<div class="container-fluid d-flex justify-content-center">
+			<img class="logo" src="{{ asset('./Logo/SCRATCH.png') }}" alt=""/>
+		</div>
+	</nav>
+
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		{% for tab in tabsId %}
+			<li class="nav-item" role="presentation">
+				<button class="nav-link color" id="{{tab}}-tab" data-bs-toggle="tab" data-bs-target="#{{tab}}" type="button" role="tab" aria-controls="{{tab}}" aria-selected="true">{{tabs[tab] | raw}}</button>
+			</li>
+		{% endfor %}
+	</ul>
+	<div class="tab-content d-flex justify-content-center" id="myTabContent">
+		{% if 'home' in tabsId %}
+			{% include 'common/home.html.twig' only %}
+		{% endif %}
+		{% if 'interface' in tabsId %}
+			{% include 'common/interface.html.twig' %}
+		{% endif %}
+		{% if 'about' in tabsId %}
+			{% include 'common/about.html.twig' only %}
+		{% endif %}
+		{% if 'cat-profile' in tabsId %}
+			{% include 'individual/cat-profile.html.twig' only %}
+		{% endif %}
+		{% if 'cat-profile' in tabsId %}
+			{% include 'individual/see-cat-profile.html.twig' only %}
+		{% endif %}
+		{% if 'my-profile' in tabsId %}
+			{% include 'common/my-profile.html.twig' only %}
+		{% endif %}
+		{% if 'contact' in tabsId %}
+			{% include 'common/contact.html.twig' only %}
+		{% endif %}
+		{% if 'inspection' in tabsId %}
+			{% include 'verificator/inspection.html.twig' only %}
+		{% endif %}
+		{% if 'history' in tabsId %}
+			{% include 'verificator/history.html.twig' only %}
+		{% endif %}
+		{% if 'content' in tabsId %}
+			{% include 'admin/content.html.twig' only %}
+		{% endif %}
+		{# {% if 'users' in tabsId %}
+					{% include 'admin/users.html.twig' only %}
+				{% endif %} #}
+		{% if 'messaging' in tabsId %}
+			{% include 'admin/messaging.html.twig' only %}
+		{% endif %}
+	</div>
+{% endblock %}

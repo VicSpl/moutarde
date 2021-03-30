@@ -1,0 +1,101 @@
+<div class="tab-pane fade show presentation active form-site" id="my-profile" role="tabpanel" aria-labelledby="my-profile-tab">
+	<form class="profile-form" action="" method="post">
+		<div class="btn-grp">
+			<button class="form-control btn-color icon-btn">
+				<span class="material-icons">
+					edit
+				</span>
+			</button>
+			<button type="submit" class="form-control btn-color icon-btn" hidden>
+				<span class="material-icons">
+					save
+				</span>
+			</button>
+			<button type="reset" class="form-control btn-color icon-btn" hidden>
+				<span class="material-icons">
+					cancel
+				</span>
+			</button>
+		</div>
+		<fieldset disabled>
+			<legend>Identité
+			</legend>
+			<label for="lastname">Nom</label>
+			<input class="form-control" name="lastname" id="lastname" placeholder="Dufour" required>
+			<label for="firstname">Prénom</label>
+			<input class="form-control" name="firstname" id="firstname" placeholder="Jean" required>
+			<label for="nickname">Pseudo</label>
+			<input class="form-control" name="nickname" id="nickname" placeholder="JeanD" required>
+
+		</fieldset>
+	</form>
+
+	<form class="profile-form" action="" method="post">
+		<div class="btn-grp">
+			<button class="form-control btn-color icon-btn">
+				<span class="material-icons">
+					edit
+				</span>
+			</buttonhidden>
+			<button type="submit" class="form-control btn-color icon-btn" hidden>
+				<span class="material-icons">
+					save
+				</span>
+			</button>
+			<button type="reset" class="form-control btn-color icon-btn" hidden>
+				<span class="material-icons">
+					cancel
+				</span>
+			</button>
+		</div>
+		<fieldset disabled>
+			<legend>Coordonnées</legend>
+			<label for="address">Adresse</label>
+			<input class="form-control" name="address" id="address" placeholder="5 rue de la bonne" required>
+
+			<div class="d-flex justify-content-between">
+				<label for="address">Code</label>
+				<label for="address">Ville</label>
+
+			</div>
+			<div class="d-flex">
+				<input class="form-control" name="zip-code" id="zip-code" id="zip-code" placeholder="91000" required/>
+				<input class="form-control" type="texte" name="city" id="city" placeholder="Evry" required/>
+			</div>
+			<label for="number">Number</label>
+			<input class="form-control" name="number" id="number" placeholder="0625xxxxxx" required>
+			<label for="email">Email</label>
+			<input class="form-control" type="email" name="email" id="email" placeholder="dufour@mandarine.fr" required>
+		</fieldset>
+	</form>
+
+	<form class="profile-form" action="" method="post">
+		<div class="btn-grp">
+			<button class="form-control btn-color icon-btn">
+				<span class="material-icons">
+					edit
+				</span>
+			</button>
+			<button type="submit" class="form-control btn-color icon-btn" hidden>
+				<span class="material-icons">
+					save
+				</span>
+			</button>
+			<button type="reset" class="form-control btn-color icon-btn" hidden>
+				<span class="material-icons">
+					cancel
+				</span>
+			</button>
+		</div>
+		<fieldset disabled>
+			<legend>Mot de passe</legend>
+			<label for="password">Ancien Mot de passe</label>
+			<input class="form-control" type="password" name="password" id="password" placeholder="********" required>
+			<label for="password">Nouveau Mot de passe</label>
+			<input class="form-control" type="password" name="password" id="password" placeholder="********" required>
+			<label for="password-confirm">Confirmez nouveau Mot de passe</label>
+			<input class="form-control" type="password" name="password-confirm" id="password-confirm" placeholder="********" required>
+		</fieldset>
+	</form>
+
+</div>
